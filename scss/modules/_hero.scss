@@ -1,0 +1,112 @@
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-body {
+    position: absolute;
+    margin-top: 4.375rem;
+    text-align: center;
+    letter-spacing: .07rem;
+    width: 100%;
+}
+
+.hero-body .heading-5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .7rem;
+    color: $primary-color;
+
+}
+
+.hero-body .heading-1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.hero-body .heading-5 span {
+    font-size: .8rem;
+    font-weight: bold;
+    color: $secondary-color;
+}
+
+.hero-body .hero-links ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.hero-body .hero-links  ul li {
+    display: inline;
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        .hero-icons {
+            height: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@include small-and-above {
+    .hero-body {
+        text-align: left;
+        width: 60%;
+        margin-left: 5.625rem;
+        margin-top: 10rem;
+
+        .heading-1 {
+
+            font-size: 2.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .heading-5 {
+            font-size: .9rem;
+        }
+        
+        .heading-5 span {
+            color: $primary-color;
+        }
+    }
+}
+
+@include medium-and-above {
+    .hero-body {
+        margin-top: 15rem;
+
+        .heading-5 {
+            font-size: 1rem;
+            padding-bottom: .9rem;
+
+            span {
+                font-size: 1.2rem;
+            }
+        }
+
+        .heading-1 {
+            font-size: 3.4rem;
+            width: 700px;
+            line-height: 3.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .hero-links {
+            
+            ul li a {
+                .hero-icons {
+                    height: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

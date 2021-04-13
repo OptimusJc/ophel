@@ -1,0 +1,24 @@
+.bg-image {
+    width: 110%;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    z-index: -3;
+    
+}
+
+
+@include small-and-above {
+    .bg-image {
+        width: 90%;
+    }
+}
+
+@include medium-and-above {
+    .bg-image {
+        width: 70%;
+        right: -15%;
+        top: -1.875rem;
+
+    }
+}

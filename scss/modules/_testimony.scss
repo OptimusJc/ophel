@@ -1,0 +1,128 @@
+.testimonial {
+    position: relative;
+    top: 26rem;
+    height: auto;
+    
+
+    .testimonial-head {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 1.3rem;
+        letter-spacing: .05rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .testimony {
+        background: #ffffff;
+        width: 80%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 15px 16px 6px rgba(197, 197, 197, 0.3);
+        line-height: 1.5rem;
+        letter-spacing: .05rem;
+        
+        
+        .testimony-body {
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+
+
+            .testimonial-circle {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                top: calc(80px / -2);
+                left: calc(80% / 2);
+                box-shadow: 10px 8px 6px rgba(197, 197, 197, .3);
+
+            }
+
+            p {
+                font-size: .8rem;
+                text-align: center;
+                margin-bottom: 1rem;
+                margin-top: 2.5rem;
+
+            }
+            
+            span {
+                font-size: 1rem;
+                font-weight: 600;
+                color: $primary-color;
+                padding-top: 1rem;
+                display: block;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+
+@include small-and-above {
+
+    .testimonial {
+
+        .testimony {
+            width: 90%;
+    
+            .testimony-body {
+                padding: .8rem;
+                line-height: 1.3rem;
+        
+                .testimonial-circle {
+                    top: calc(90px / -2);
+                    left: calc(90 / 2);
+                }
+        
+                p {
+                    font-size: .9rem;
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+@include medium-and-above {
+    .testimonial {
+        .testimony {
+            .testimony-body {
+                padding: 1.2rem;
+
+                .testimonial-circle {
+                    width: 90px;
+                    height: 90px;
+            
+                }
+
+                p {
+                    font-size: .9rem;
+                    padding-top: 1rem;
+                }
+
+                span {
+                    padding-bottom: 1rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

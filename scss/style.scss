@@ -1,0 +1,22 @@
+// BASE STYLES 
+@import "./base/variables";
+@import "./base/base";
+@import "./base/media-q";
+
+// LAYOUT STYLES 
+@import "layout/layout";
+
+
+// MODULES STYLES
+@import "modules/header";
+@import "modules/logo";
+@import "modules/nav";
+@import "modules/hero";
+@import "modules/bg-image";
+@import "modules/media";
+@import "modules/testimony";
+@import "modules/footer";
+
+// THEME STYLES
+@import "theme/theme";
+

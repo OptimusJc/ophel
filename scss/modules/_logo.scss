@@ -1,0 +1,10 @@
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+@include medium-and-above {
+    .logo {
+        height: 70px;
+    }
+}

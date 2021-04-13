@@ -1,0 +1,14 @@
+.header {
+    margin: 10px 15px;
+    position: relative;
+
+    
+}
+
+@include small-and-above {
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
